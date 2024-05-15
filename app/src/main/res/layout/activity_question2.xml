@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Question2"
+    android:theme="@style/Theme.My_Culture_Quiz"
+    android:background="@drawable/background_1">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:progress="40"
+        android:max="100"
+        android:progressTint="@color/purple2"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 2 "
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="339dp"
+        android:layout_height="192dp"
+        android:layout_gravity="center"
+        android:src="@drawable/quest2"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="10sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quel est le nom du 'Call Of Duty' sorti en 2011 ?"
+            android:textSize="20sp"
+            android:id="@+id/question_text2"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="25sp"
+            android:layout_marginEnd="25sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="22sp"
+            android:id="@+id/rg">
+
+            <RadioButton
+                android:id="@+id/radioA2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modern Warfare 3" />
+
+            <RadioButton
+                android:id="@+id/radioB2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Black Ops 3" />
+
+            <RadioButton
+                android:id="@+id/radioC2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ghosts" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonNext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:textSize="20sp"
+            android:background="@color/purple2"
+            android:textColor="@color/purple"
+            android:text="Next" />
+
+        <TextView
+            android:id="@+id/timer_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="7dp"/>
+    </LinearLayout>
+
+</LinearLayout>
